@@ -1,0 +1,6 @@
+<h1>프로젝트 투표 결과</h1>
+<h2>{{ project.title }}</h2>
+<p>{{ project.description }}</p>
+
+<p>평균 점수: {{ project.average_score }}</p>
+<p><a href="{% url 'projects:project_list' %}">← 프로젝트 목록으로</a></p>
