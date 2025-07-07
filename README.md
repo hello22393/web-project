@@ -63,12 +63,16 @@ python manage.py runserver
 
 ## Docker로 실행하는 방법
 ```bash
-# 1. 이미지 빌드 및 컨테이너 실행
+# 이미지 빌드 및 컨테이너 실행
 docker-compose up --build
+```
 
-# 2. 웹사이트 접속
+
+## 웹페이지 링크
+```
+# 사용자 웹페이지지 접속
 http://localhost:8000
 
-# 3. 관리자 페이지 접속
+# 관리자 페이지 접속
 http://localhost:8000/admin
 ```
