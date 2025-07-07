@@ -30,38 +30,37 @@
 
 ---
 
+## 프로젝트 구조
+web-project/
+├── config/               # Django 설정
+├── projects/             # 프로젝트 평가 앱
+│   └── templates/        # HTML 템플릿
+├── db.sqlite3            # 기본 DB
+├── manage.py             # Django 명령어 진입점
+├── Dockerfile            # Docker 이미지 설정
+├── docker-compose.yml    # Docker 실행 설정
+├── requirements.txt      # Python 패키지 목록
+
+---
+
 ## 실행 방법
 
-## 로컬에서 실행하는 방법 (Windows 기준)
-
+# 개발용으로 실행하는 방법 (Windows 기준)
 ```bash
-# 1. 가상환경 생성
 python -m venv venv
+.\venv\Scripts\Activate.ps1
 
-# 2. 가상환경 활성화
-.\venv\Scripts\activate
-
-# 3. 패키지 설치
+# 패키지 설치
 pip install -r requirements.txt
 
-# 4. 마이그레이션 적용
-python manage.py migrate
-
-# 5. 관리자 계정 생성
-python manage.py createsuperuser
-
-# 6. 개발 서버 실행
+# 서버 실행
 python manage.py runserver
 
-# 2. 웹사이트 접속
-http://localhost:8000
-
-# 3. 관리자 페이지 접속
-http://localhost:8000/admin
+#관리자 계정 생성
+python manage.py createsuperuser
 ```
 
 ## Docker로 실행하는 방법
-
 ```bash
 # 1. 이미지 빌드 및 컨테이너 실행
 docker-compose up --build
