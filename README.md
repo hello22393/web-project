@@ -49,7 +49,7 @@ web-project/
 # 개발용으로 실행하는 방법 (Windows 기준)
 ```bash
 python -m venv venv
-.\venv\Scripts\Activate.ps1
+.\venv\Scripts\activate
 
 # 패키지 설치
 pip install -r requirements.txt
