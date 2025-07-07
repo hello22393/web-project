@@ -31,6 +31,7 @@
 ---
 
 ## 프로젝트 구조
+```
 web-project/
 ├── config/               # Django 설정
 ├── projects/             # 프로젝트 평가 앱
@@ -40,7 +41,7 @@ web-project/
 ├── Dockerfile            # Docker 이미지 설정
 ├── docker-compose.yml    # Docker 실행 설정
 ├── requirements.txt      # Python 패키지 목록
-
+```
 ---
 
 ## 실행 방법
