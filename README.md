@@ -53,11 +53,11 @@ python -m venv venv
 # 패키지 설치
 pip install -r requirements.txt
 
-# 서버 실행
-python manage.py runserver
-
 #관리자 계정 생성
 python manage.py createsuperuser
+
+# 서버 실행
+python manage.py runserver
 ```
 
 ## Docker로 실행하는 방법
