@@ -1,10 +1,15 @@
-<h1>프로젝트 목록 (평균 점수 순)</h1>
+<h1>프로젝트 목록</h1>
 <ul>
   {% for project in object_list %}
     <li>
       <a href="{% url 'projects:project_detail' project.pk %}">
         {{ project.title }}
-      </a> - 평균 점수: {{ project.avg_score|default:"N/A" }}
+      </a> - 평균 점수: 
+        {% if project.avg_score %}
+          {{ project.avg_score|floatformat:2 }}
+        {% else %}
+          N/A
+        {% endif %}
     </li>
   {% endfor %}
 </ul>
